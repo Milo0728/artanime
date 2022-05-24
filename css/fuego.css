@@ -1,0 +1,64 @@
+#tab4 h1{
+    text-align: center;
+    color: white;
+    background-color: rgb(218, 76, 33);
+    width: 100%;
+    padding: 20px;
+}
+
+#tab4 h1:hover{
+    transition: 0.5s ease;
+    color: rgb(218, 76, 33);
+    background-color: white;
+}
+
+.contenido-producto-fuego {
+    margin: 15px;
+    padding: 2px 16px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boton-agregar-fuego {
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 67, 20, 0.973);
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boton-agregar-fuego:hover{
+    background: rgba(238, 163, 145, 0.973);
+    color: rgba(255, 67, 20, 0.973);
+}
+
+
+.cuerpo-producto-fuego img{
+    width: 100%;
+}
+
+.cuerpo-producto-fuego {
+    font-size: 12px;
+    border: solid rgba(128, 128, 128, 0.527) 1px;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    margin: 30px auto;
+    background-color: rgb(236, 235, 235);
+}
+
+.cuerpo-producto-fuego:hover {
+    background: rgb(218, 76, 33)
+}
+
+.descripcion-fuego {
+    font-size: 13px;
+}

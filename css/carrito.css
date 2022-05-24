@@ -1,0 +1,126 @@
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    
+}
+
+#cart table img{
+    width: 60px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table tbody td {
+    font-size: 15px;
+}
+
+#subtotal{
+    margin: 50px auto;
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1; 
+    padding: 30px;
+    background-color: #f0f0f0;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#subtotal table tr:hover{
+    background-color: #d3cfcf;
+}
+
+#subtotal:hover{
+    background: white;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#subtotal .checkout{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+#subtotal .checkout:hover{
+    background-color: #0fb8ac;
+    transition: 0.4s ease;
+}
+
+#cart {
+    overflow-x: auto;
+}
+
+@media (max-width: 477px) {
+    #subtotal {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+
+}

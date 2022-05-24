@@ -1,0 +1,79 @@
+#tab1 {
+    background-color: white;
+}
+
+
+.container-slider{
+    background-color: #fff;
+    width: 60%;
+    min-width: 520px;
+    margin: 0px auto;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 30px;
+}
+
+.image-container{
+    position: relative;
+    width: 100%;
+}
+
+#tab1 img {
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+#tab1 .activo{
+    display: block;
+}
+
+.dot-container {
+    width: 150px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#tab1 button{
+    outline: none;
+    cursor: pointer;
+}
+
+.dot-container button {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 3px solid #b80b0b;
+    background-color: transparent;
+}
+
+.dot-container button:nth-child(1){
+    background-color: #b80b0b;
+}
+
+#prev, #next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background: #b80b0b;
+    color: #fff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#prev {
+    left: 15px;
+}
+
+#next {
+    right: 15px;
+}
+

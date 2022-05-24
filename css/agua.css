@@ -1,0 +1,88 @@
+#tab2 h1{
+    text-align: center;
+    color: white;
+    background-color: rgb(82, 192, 183);
+    width: 100%;
+    padding: 20px;
+}
+
+#tab2 h1:hover{
+    transition: 0.5s ease;
+    color: rgb(82, 192, 183);
+    background-color: white;
+}
+
+.btn-agregar {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(98, 216, 224);
+    transition-duration: 0.4s;
+    margin-left: 35%;
+}
+
+.btn-agregar:hover {
+    background-color: rgb(98, 216, 224);
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.contenido-producto-agua {
+    margin: 15px;
+    padding: 2px 16px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boton-agregar {
+    text-decoration: none;
+    color: white;
+    background: rgba(37, 91, 172, 0.973);
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boton-agregar:hover{
+    background: rgba(55, 116, 209, 0.974);
+}
+
+
+.cuerpo-producto img{
+    width: 100%;
+}
+
+.cuerpo-producto {
+    font-size: 12px;
+    border: solid rgba(128, 128, 128, 0.527) 1px;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    margin: 30px auto;
+    background-color: rgb(236, 235, 235);
+}
+
+.cuerpo-producto:hover {
+    background: rgb(98, 216, 224);
+}
+
+.descripcion {
+    font-size: 13px;
+}
+
+.tabs2 {
+    text-decoration: none;
+    list-style: none;
+}

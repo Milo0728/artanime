@@ -1,0 +1,63 @@
+#tab3 h1{
+    text-align: center;
+    color: white;
+    background-color: rgb(116, 116, 116);
+    width: 100%;
+    padding: 20px;
+}
+
+#tab3 h1:hover{
+    transition: 0.5s ease;
+    color: rgb(116, 116, 116);
+    background-color: white;
+}
+
+.contenido-producto-viento {
+    margin: 15px;
+    padding: 2px 16px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.boton-agregar-viento {
+    text-decoration: none;
+    color: white;
+    background: rgba(184, 185, 185, 0.973);
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boton-agregar-viento:hover{
+    background: rgba(160, 160, 160, 0.974);
+}
+
+
+.cuerpo-producto-viento img{
+    width: 100%;
+}
+
+.cuerpo-producto-viento {
+    font-size: 12px;
+    border: solid rgba(128, 128, 128, 0.527) 1px;
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;
+    margin: 30px auto;
+    background-color: rgb(236, 235, 235);
+}
+
+.cuerpo-producto-viento:hover {
+    background: rgb(128, 128, 128);
+}
+
+.descripcion-viento {
+    font-size: 13px;
+}

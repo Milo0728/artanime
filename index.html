@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtAnime</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/estilos.css">
+    <!-- CSS AGUA -->
+    <link rel="stylesheet" href="/css/agua.css">
+    <!-- CSS VIENTO -->
+    <link rel="stylesheet" href="/css/viento.css">
+    <!-- CSS FUEGO -->
+    <link rel="stylesheet" href="/css/fuego.css">
+    <!-- CSS LOGIN -->
+    <link rel="stylesheet" href="/css/login.css">
+    <!-- CSS INICIO -->
+    <link rel="stylesheet" href="/css/containerslider.css">
+    <!-- CSS CARRITO -->
+    <link rel="stylesheet" href="/css/carrito.css">
+    <!-- CSS ADMIN CON BOOTSWATCH -->
+    <link rel="stylesheet" href="/css/admin.css">
+    <!-- CSS FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/2350490bda.js" crossorigin="anonymous"></script>
+
+    <!-- ICONO PARA LOGIN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="tabs">
+            <li><a href="#tab1"><span class="fa-solid fa-house-user"></span><span class="tab-text">Inicio</span></a>
+            </li>
+            <li><a href="#tab2"><span class="fa-solid fa-droplet"></span><span class="tab-text">Agua</span></a></li>
+            <li><a href="#tab3"><span class="fa-solid fa-wind"></span><span class="tab-text">Viento</span></a></li>
+            <li><a href="#tab4"><span class="fa-solid fa-fire"></span><span class="tab-text">Fuego</span></a></li>
+            <li><a href="#tab5"><span class="fa-solid fa-cart-shopping"></span><span class="tab-text">Carrito</span></a>
+            </li>
+            <li><a href="#tab6"><span class="fa-solid fa-door-open"></span><span class="tab-text">Login</span></a></li>
+            <li><a href="#tab7"><span class="fa-solid fa-screwdriver-wrench"></span><span class="tab-text">Admin</span></a></li>
+        </ul>
+
+        <div class="secciones">
+            <article id="tab1">
+                <div class="container-slider">
+                    <div class="image-container">
+
+                        <ul class="tabs2">
+                            <li><a href="#tab2"><img src="/img/anime-agua (2).jpg" id="content1" class="activo"></a></li>
+                            <li><a href="#tab3"><img src="/img/anime-viento.jpg" id="content2"></a></li>
+                            <li><a href="#tab4"><img src="/img/anime-fuego.jpg" id="content3"></a></li>
+                        </ul>
+
+                    </div>
+                    <div class="dot-container">
+                        <button onclick="dot(1)"></button>
+                        <button onclick="dot(2)"></button>
+                        <button onclick="dot(3)"></button>
+                    </div>
+                    <button id="prev" onclick="prev()"> &lt; </button>
+                    <button id="next" onclick="next()"> &gt; </button>
+                </div>
+            </article>
+
+            <article id="tab2">
+                <h1>¡Bienvenid@ a la sección de Agua!</h1>
+                <div class="contenido-producto-agua">
+                    
+                </div>
+            </article>
+
+            <article id="tab3">
+                <h1>¡Bienvenid@ a la sección de Viento!</h1>
+                <div class="contenido-producto-viento">
+
+                </div>
+            </article>
+
+            <article id="tab4">
+                <h1>¡Bienvenid@ a la sección Fuego!</h1>
+                <div class="contenido-producto-fuego">
+
+                </div>
+            </article> 
+
+            <article id="tab5">
+                <h1>Carrito</h1>
+                <div id="cart">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Quitar</td>
+                                <td>Imagen</td>
+                                <td>Producto</td>
+                                <td>Precio</td>
+                                <td>Cantidad</td>
+                            </tr>
+                        </thead>
+
+                    </table>
+                </div>
+                
+                <div id="subtotal">
+                    <h3>Total Carrito</h3>
+                    <table>
+                        <tr>
+                            <td>Carrito Subtotal</td>
+                            <td id="subtotal-valor">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Envío</td>
+                            <td>Gratis</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong id="total-valor"></strong></td>
+                        </tr>
+                    </table>
+                    <button class="checkout" onclick="funcionCheckout()">Checkout</button>
+                </div>
+            </article>
+
+            <article id="tab6">
+
+                <div class="contenido-login">
+                    <div class="redBg">
+                        <div class="box signin">
+                            <h2>Ya tienes una cuenta?</h2>
+                            <button class="signinBtn">Ingresar</button>
+                        </div>
+                        <div class="box signup">
+                            <h2>No tienes una cuenta?</h2>
+                            <button class="signupBtn">Registrar</button>
+                        </div>
+                    </div>
+                    <div class="formBx">
+                        <div class="form signinForm">
+                            <form>
+                                <h3>Ingresar</h3>
+                                <input id="userName" type="text" placeholder="Usuario">
+                                <input id="userPw" type="password" placeholder="Contraseña">
+                                <input class="btn_ingresar" type="submit" value="Ingresar">
+                                <a href="#" class="forgot">Contraseña olvidada</a>
+                            </form>
+                        </div>
+                        <div class="form signupForm">
+                            <form>
+                                <h3>Registrarse</h3>
+                                <input id="name" type="text" placeholder="Usuario">
+                                <input id="mail" class="correo" type="email" placeholder="E-Mail">
+                                <input id="pw" type="password" placeholder="Contraseña">
+                                <input id="pwConfirm" type="password" placeholder="Confirmar Contraseña">
+                                <input class="btn_registrar" type="submit" value="Registrar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            <article id="tab7">
+
+                <div class="container">
+
+                    <!-- APPLICATION -->
+                    <!-- AGUA -->
+                    <div id="App" class="row">
+                        <!-- FORM -->
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Añadir un producto de Agua</h4>
+                                </div>
+
+                                <form id="product-form" class="card-body">
+            
+                                    <div class="form-group">
+                                        <input type="text" id="nameNewProduct" placeholder="Nombre Producto" class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="url" id="imgNewProduct" placeholder="URL Imagen Producto" class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="text" id="desNewProduct" placeholder="Descripción Producto" class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="text" id="matNewProduct" placeholder="Material Producto" class="form-control" />
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <input type="number" id="priceNewProduct" step="0.01" placeholder="Precio Producto"
+                                            class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="number" id="disNewProduct" min="0" step="1" placeholder="Cantidad Disponible"
+                                            class="form-control" />
+                                    </div>
+            
+                                    <input type="submit" value="Añadir Producto" class="btn" />
+            
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VIENTO -->
+                    <div id="App2" class="row">
+                        <!-- FORM -->
+                        <div class="col">
+                            <div class="card-viento">
+                                <div class="card-header-viento">
+                                    <h4>Añadir un producto de Viento</h4>
+                                </div>
+
+                                <form id="product-form-viento" class="card-body">
+            
+                                    <div class="form-group">
+                                        <input type="text" id="nameNewProductViento" placeholder="Nombre Producto" class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="url" id="imgNewProductViento" placeholder="URL Imagen Producto" class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="text" id="desNewProductViento" placeholder="Descripción Producto" class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="text" id="matNewProductViento" placeholder="Material Producto" class="form-control" />
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <input type="number" id="priceNewProductViento" step="0.01" placeholder="Precio Producto"
+                                            class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="number" id="disNewProductViento" min="0" step="1" placeholder="Cantidad Disponible"
+                                            class="form-control" />
+                                    </div>
+            
+                                    <input type="submit" value="Añadir Producto" class="btn" />
+            
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FUEGO -->
+                    <div id="App3" class="row">
+                        <!-- FORM -->
+                        <div class="col">
+                            <div class="card-fuego">
+                                <div class="card-header-fuego">
+                                    <h4>Añadir un producto de Fuego</h4>
+                                </div>
+
+                                <form id="product-form-fuego" class="card-body">
+            
+                                    <div class="form-group">
+                                        <input type="text" id="nameNewProductFuego" placeholder="Nombre Producto" class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="url" id="imgNewProductFuego" placeholder="URL Imagen Producto" class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="text" id="desNewProductFuego" placeholder="Descripción Producto" class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="text" id="matNewProductFuego" placeholder="Material Producto" class="form-control" />
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <input type="number" id="priceNewProductFuego" step="0.01" placeholder="Precio Producto"
+                                            class="form-control" />
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <input type="number" id="disNewProductFuego" min="0" step="1" placeholder="Cantidad Disponible"
+                                            class="form-control" />
+                                    </div>
+            
+                                    <input type="submit" value="Añadir Producto" class="btn" />
+            
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+    <script src="/js/carrito.js"></script>
+    <script src="/js/admin.js"></script>
+    <script src="/js/slide.js"></script>
+    <script src="/js/admin-viento.js"></script>
+    <script src="/js/carritoviento.js"></script>
+    <script src="/js/admin-fuego.js"></script>
+    <script src="/js/carritofuego.js"></script>
+
+</body>
+
+</html>
